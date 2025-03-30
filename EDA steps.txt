@@ -1,0 +1,66 @@
+========== EDA steps ===================
+1. Read the data 
+2. Separate categorical columns and Numerical Columns
+3. Data quick checks
+   shape, columns, dtypes, 
+4. Null value analysis
+   A) Check if any Null values are present
+   B) Fill the null values with Median or 
+    KNNImputer for Numerical Columns
+   C) Fill the null values with Mode 
+      for categorical columns 
+5. Do some data preprocess
+   if any column is corrupted
+   ex: Numerical values in categorical columns
+   ex: Categorical values in numerical columns
+
+6. Drop the Id type columns
+   which means a Data has more unique labels
+   Drop the Single value columns
+
+7. Categorical column analysis
+    A) Frequency table
+    B) Bar charts 
+    C) Pie charts
+
+8. Numerical Column analysis
+   A) Histogram  
+   B) Distribution
+   C) Box plot
+
+9.  Outlier analysis
+    Impute the outliers with Median
+
+10. Find the Correlation between numerical columns
+     Heat map
+
+11. Convert cat to Numerical
+    A) LabelEncoder
+    B) One hot encoder
+
+12. Scale the data
+     A) Z standardization
+     B) Normalization
+
+by the time of 12 steps, we achieve 3 things
+(i) Cleaned data
+(ii) Data in the form of complete Numerical
+(iii) we have some understanding the data
+
+13. we will try to select the important feature For ML 
+    model
+    A) PCA: principle component analysis(will be covered in ML)
+
+
+Finally we achieve 3 data sets
+
+1. Till step-11 
+     with out scale but data in Numerical format
+
+2. Till step-12
+    with scaling data in Numerical format
+
+3. Till step-13
+   PCA data
+   
+   
